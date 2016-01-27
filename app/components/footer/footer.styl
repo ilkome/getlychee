@@ -1,0 +1,110 @@
+.footer
+	background color-white
+	box-shadow inset 0 3px 7px alpha(#898989, .6)
+	
+	&-in
+		padding 50px 0
+		color #4a4a4a
+		font-size 14px
+		font-weight 400
+		text-align center
+		
+		@media md
+			dt("auto")
+			text-align left
+		
+		a
+			color #4a4a4a
+
+.footer
+	&Copy
+		@media sm
+			padding-bottom 20px
+			
+		@media md
+			dtc("center")
+			width 55%
+			padding-bottom 0
+		
+		ul
+			lino()
+			padding-top 10px
+			
+			@media md
+				display inline-block
+				padding-top 0
+		
+		li
+			display inline-block
+		
+		a
+			display inline-block
+			tdu()
+			margin 0 5px
+			
+			@media sm
+				margin 0
+				margin-left 15px
+			
+			&:hover
+				tdn()
+				
+	
+	&Microsoft
+		display inline-block
+		padding 20px 0
+		
+		@media md
+			dtc("center")
+			width 300px
+			padding 0
+
+		&-in
+			padding-bottom 3px
+			margin-top 5px
+			padding-right 145px
+			text-align right
+			white-space nowrap
+			background url("../img/logo-microsoft@2x.png") center right no-repeat
+			background-size 130px 23px
+
+	&Social
+		display inline-block
+		padding-top 20px
+		padding-left 20px
+		text-align right
+		
+		@media md
+			dtc("center")
+			width 300px
+			padding-top 5px
+
+		ul
+			display inline-block
+			lino()
+		li
+			display inline-block
+			padding 0 10px
+			text-align center
+		a
+			display block
+			margin-bottom -10px
+			width 30px
+			height 30px
+			anim-hover-op(.8)
+			
+			@media md
+				margin-bottom 0
+
+		&-twitter a
+			width 36px
+			background url("../img/social-twitter@2x.png") no-repeat
+			background-size 100% 100%
+		
+		&-instagram a
+			background url("../img/social-instagram@2x.png") no-repeat
+			background-size 100% 100%
+		
+		&-facebook a
+			background url("../img/social-facebook@2x.png") no-repeat
+			background-size 100% 100%

@@ -1,0 +1,369 @@
+.header
+	margin-bottom 80px
+	
+	&_nomargin
+		margin-bottom 0
+	
+	&-main
+		background #92a8b4 url("../img/header-bg.jpg") center center no-repeat
+		bg-cover()
+	
+	&-top
+		padding 40px 0
+		margin-bottom 30px
+		
+		@media sm
+			margin-bottom 40px
+		
+		@media md
+			margin-bottom 300px
+	
+	&-clear
+		padding-top 40px
+		
+	&-info
+		padding-bottom 95px
+
+.header
+	text-align center
+	
+	@media md
+		text-align left
+		
+	&Logo
+		@media md
+			float left
+		
+		a
+			display inline-block
+			width 113px
+			height 50px
+			background url("../img/logo.png") no-repeat
+			background-size 100% 100%
+	
+	&Menu
+		display block
+		padding-top 17px
+		border-bottom 4px solid #ffe806
+		padding-bottom 50px
+
+		@media sm
+			padding-bottom 0
+			display inline-block
+		
+		@media md
+			float right
+		
+		ul
+			lino()
+			
+		li
+			display block
+			padding 0 25px
+			padding-bottom 10px
+			
+			@media sm
+				display inline-block
+				padding-bottom 10px
+		
+		a
+			display inline-block
+			color color-white
+			font-size 18px
+			font-weight 600
+			text-transform uppercase
+			anim-color()
+			tdn()
+
+			&:hover
+				color #ffe806
+		
+		&_black
+			a
+				color #000
+				
+				&:hover
+					color #917811
+	
+	&Promotext
+		font-size 20px
+		color color-white
+		font-weight 600
+		padding-bottom 45px
+		
+		@media sm
+			margin 0 auto
+			max-width 580px
+
+		@media md
+			margin 0
+
+		h2
+			margin-bottom 45px
+			color color-white
+			font-size 32px
+			font-weight 300
+		p
+			margin-bottom 0
+	
+	&App
+		color color-white
+		
+		@media md
+			max-width 440px
+			float right
+			margin-top -80px
+		
+		&-in
+			@media sm
+				display inline-block
+			
+			@media md
+				dt("auto")
+			
+		&-appstore
+			padding-bottom 20px
+			
+			@media sm
+				dtc("center")
+				padding-right 40px
+				padding-bottom 0
+			
+			a
+				display inline-block
+				width 180px
+				height 68px
+				background #000 url("../img/app-apple@2x.png") no-repeat
+				background-size 100% 100%
+				anim-hover-op(.8)
+		
+		&-soon
+			font-size 20px
+			font-weight 600
+
+			@media sm
+				dtc("center")
+			
+			ul
+				display inline-block
+				lino()
+				
+				@media md
+					dt("auto")
+					
+			li
+				dtc("center")
+				padding 0 5px
+				
+				&:last-child
+					padding-right 0
+				
+			a
+				display block
+				width 50px
+				height 50px
+				anim-hover-op(.8)
+		
+		&-desc
+			padding-right 20px
+		
+		&-play
+			background url("../img/app-play@2x.png") no-repeat
+			background-size 100% 100%
+		
+		&-win
+			background url("../img/app-win@2x.png") no-repeat
+			background-size 100% 100%
+	
+	&Desc
+		position relative
+		border-top 5px solid #b7a02a
+		box-shadow 0 3px 7px 0px #898989
+		
+		&-in
+			color #4a4a4a
+			text-align center
+			
+			@media md
+				dt()
+			
+		&-yellow
+			padding 70px 20px
+			background #efc514
+			
+			@media sm
+				padding 70px 100px
+			
+			@media md
+				dtc("center")
+				text-align left
+
+			&-in
+				font-size 24px
+				font-weight 300
+				
+				@media md
+					float right
+					width 310px
+
+		&-white
+			padding 70px 20px
+			background white
+
+			@media sm
+				padding 70px 100px
+			
+			@media md
+				dtc("center")
+				text-align right
+			
+			&-in
+				font-size 18px
+				font-weight 600
+				
+				@media md
+					width 380px
+					float left
+
+.headerAbout
+	background #92a8b4 url("../img/header-bg-about.jpg") center center no-repeat
+	bg-cover()
+	padding-bottom 50px
+	color color-white
+	
+	&-top
+		padding 40px 0 60px 0
+	
+	&-main
+		margin 0 10px
+		position relative
+		padding-bottom 40px
+		font-size 12px
+		text-align center
+		
+		@media sm
+			max-width 600px
+			margin 0 auto
+		
+		@media md
+			font-size 18px
+
+	&-text
+		z-index 2
+		position relative
+		padding 30px
+		background #efc514
+		border-radius 0px
+		
+		@media sm
+			width 60%
+			margin 0 auto
+			
+		@media md
+			width 600px
+			height 600px
+			padding 50px 100px
+			margin-bottom 0px
+			border-radius 50%
+		
+		h1
+			margin-bottom 50px
+			font-size 20px
+			color color-white
+		
+			@media md
+				font-size 36px
+	
+	&-team
+		z-index 3
+		margin-bottom 30px
+		padding 30px
+		background #f45844
+		
+		@media sm
+			width 60%
+			margin 0 auto
+			margin-bottom 30px
+		
+		@media md
+			position absolute
+			right -40px
+			bottom 0px
+			width 200px
+			height 200px
+			padding 60px 0px
+			margin-bottom 0px
+			border-radius 50%
+			animation circulate-clockwise 9s linear infinite
+	
+	&-sponsor
+		display block
+		margin 0 auto
+		width 248px
+		height 248px
+		background url("../img/header-microsoft@2x.png") no-repeat
+		background-size 100% 100%
+		
+		@media md
+			position absolute
+			right -80px
+			top -30px
+			width 200px
+			height 200px
+			padding 60px 0px
+			margin-bottom 0px
+			border-radius 50%
+			animation circulate-counterclockwise 10s linear infinite
+			
+.headerFeedback
+	background #92a8b4 url("../img/header-bg-feedback.jpg") center center no-repeat
+	bg-cover()
+	padding-bottom 1px
+		
+	&-top
+		padding 40px 0 60px 0
+	
+	&-main
+		max-width 960px
+		margin 0 10px
+		position relative
+		padding-bottom 40px
+		font-size 12px
+		text-align center
+		
+		@media sm
+			margin 0 20px
+			
+		@media md
+			max-width 960px
+			margin 0 auto
+			
+
+@keyframes circulate-clockwise {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		 transform: translate(10%, 10%);
+	}
+	50% {
+		 transform: translate(0%, 20%);
+	}
+	75% {
+		transform: translate(-10%, 10%);
+	}
+}
+@keyframes circulate-counterclockwise {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		 transform: translate(-5%, 10%);
+	}
+	50% {
+		 transform: translate(0%, 20%);
+	}
+	75% {
+		transform: translate(5%, 10%);
+	}
+}

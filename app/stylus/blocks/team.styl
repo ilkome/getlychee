@@ -1,0 +1,78 @@
+.teamBox
+	@media sm
+		padding 0 40px
+	
+	@media md
+		padding 0 80px
+	
+	&-in
+		@media md
+			wrap()
+
+.teamEl
+	padding-bottom 50px
+	color #4a4a4a
+	font-size 20px
+	font-weight 400
+	
+	@media md
+		col(2)
+		margin 0
+		padding-bottom 0
+		
+		&:first-child
+			.teamEl-in
+				float left
+		
+		&:last-child
+			.teamEl-in
+				float right
+	
+	&:last-child
+		padding-bottom 0
+	
+	&-in
+		@media md
+			width 300px
+			margin 0 auto
+			
+	&-pic
+		text-align center
+		padding-bottom 30px
+		
+		img
+			display inline-block
+			width 100%
+			max-width 300px
+	
+	&-name
+		margin-bottom 0
+		font-weight 400
+	
+	&-desc
+		padding 25px 0
+		color #8e959a
+
+.typed-box
+	position relative
+	width 10px
+	margin 0 auto
+	background red
+	text-align left
+	
+	p
+		margin 0
+		display inline-block
+
+.typed-box-in
+	position absolute
+	left -78px
+	top -170px
+	width 110px
+	color color-white
+	font-size 9px
+	line-height 15px
+	
+.typed-content
+	position relative
+	display inline-block

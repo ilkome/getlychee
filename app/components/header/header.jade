@@ -1,0 +1,98 @@
+mixin headerMenu(className)
+	.headerMenu(class=className)
+		ul
+			li.is-active: a(href="index.html") Home
+			
+			li: a(href="about.html") Who we are html
+			li: a(href="feedback.html") Feedback html
+			li: a(href="about.html") Who we are
+			li: a(href="feedback.html") Who we are
+
+			//- li: a(href="about.php") Feedback
+			//- li: a(href="feedback.php") Feedback
+
+mixin headerLogo
+	.headerLogo: a(href="index.html")
+
+mixin headerIndex
+	.header
+		.header-main
+			.header-top
+				.l-wrap
+					+headerLogo
+					+headerMenu
+			.header-info
+				.l-wrap
+					.headerPromotext
+						h2 We are here to show you exciting events and experiences from nearby or major cities worldwide!
+						p Discover new interests, popular posts, destinations and trends to go out and be social again!
+					.headerApp
+						.headerApp-in
+							.headerApp-appstore: a(href="https://itunes.apple.com/us/app/lychee-proximity-based-connectivity/id1067470912?ls=1&mt=8" target="_blank")
+							.headerApp-soon
+								ul
+									li.headerApp-desc Soon on:
+									li: a(href="#").headerApp-play
+									li: a(href="#").headerApp-win
+		.headerDesc
+			.headerDesc-in
+				.headerDesc-yellow
+					.headerDesc-yellow-in Stay connected with friends or what’s happening in major cities across the globe where you have no friends!
+				.headerDesc-white
+					.headerDesc-white-in Our streamlined app connects you to the world beyond the limitations of your own social media networks.  Discover events and social content in a whole new way.
+
+mixin headerAbout
+	.header
+		.headerAbout
+			.headerAbout-top
+				.l-wrap
+					+headerLogo
+					+headerMenu
+			.headerAbout-main
+				.headerAbout-text
+					h1 Who we are
+					p Lychee was created by Griid Technology Software Inc, a Microsoft partner company. The team behind Lychee wishes to change the way users connect to events, people and places by sorting through dozens of independent sources and millions of bytes of social data. 
+					p The team is comprised of globally awarded hackers, dedicated specialized developers, business minds, and best of all users&nbsp;just&nbsp;like&nbsp;you! 
+					p We are Lychee.
+				.headerAbout-team Lean, <br>yet most of all<br>we are MEAN
+				.headerAbout-sponsor
+
+mixin headerFeedback
+	.header.header_nomargin
+		.headerFeedback
+			.headerFeedback-top
+				.l-wrap
+					+headerLogo
+					+headerMenu
+			.headerFeedback-main
+				.boxwhite.boxwhite_textfirst
+					.boxwhite-content
+						h3.boxwhite-name Got feedback for us?
+						.boxwhite-text
+							.boxwhite-intro We love feedback, please drop us a line anytime with a comment, suggestion or question! Someone will reach out to you as soon as possible!
+							+feedbackForm
+					.boxwhite-pic: img(src="img/boxwhite-email.png", alt="")
+
+mixin headerFeedbackSuccess
+	.header.header_nomargin
+		.headerFeedback
+			.headerFeedback-top
+				.l-wrap
+					+headerLogo
+					+headerMenu
+			.headerFeedback-main
+				.boxwhite
+					.boxwhite-content.boxwhite-content_feedback
+						h3.boxwhite-name Thinking of working together?
+						.boxwhite-text
+							.boxwhite-intro Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo.
+
+						.feedbackSuccess
+						.feedbackSendMore: a(href="feedback.php").btn Send another message
+
+mixin headerTextPage
+	.header
+		.header-clear
+			.l-wrap
+				+headerLogo
+				+headerMenu("headerMenu_black")

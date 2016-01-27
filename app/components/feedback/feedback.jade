@@ -1,0 +1,12 @@
+mixin feedbackForm
+	.feedbackForm
+		form(action="http://www.getlychee.com/feedback.php" method="post")
+			.feedbackForm-row
+				.feedbackForm-col
+					input(name="Name" type="text" placeholder="Your name" required).feedbackForm-input
+				.feedbackForm-col
+					input(name="email" type="email" placeholder="Your email address" required).feedbackForm-input
+			.feedbackForm-textarea
+				textarea(name="message", cols="30", rows="10", placeholder="Your feedback" required)
+			.feedbackForm-send
+				input(type="submit" value="Send", name="submit")

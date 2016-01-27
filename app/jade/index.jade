@@ -1,0 +1,63 @@
+//- Set vars
+//-----------------------------------------------
+block vars
+	- var ishome = true
+
+
+//- Include mixins from components
+//-----------------------------------------------
+include ../components/popup/popup
+include ../components/header/header
+
+
+//- Extend layout.jade
+//-----------------------------------------------
+extends inc/layout
+
+
+//- Append this to content block in layout.jade
+//-----------------------------------------------
+block append content
+	+headerIndex
+
+	.l-content
+		.l-wrap
+			mixin boxwhite(name, text, pic, textfirst)
+				.boxwhite(class="boxwhite_#{pic} #{textfirst}")
+					if textfirst 
+						.boxwhite-content
+							h3.boxwhite-name= name
+							.boxwhite-text= text
+						.boxwhite-pic
+							img(src="img/boxwhite-#{pic}.png", alt="")
+					else
+						.boxwhite-pic
+							img(src="img/boxwhite-#{pic}.png", alt="")
+						.boxwhite-content
+							h3.boxwhite-name= name
+							.boxwhite-text= text
+			
+			+boxwhite(
+				"Live Feed",
+				"Who doesn’t want to know what’s going on nearby? Ever feel like the people we follow are not relevant all of the time? By combining your friends activity and sorts through millions of trending posts to keep you in the know on Lychee. Now, you can the experience the feed of your city or any other major city in the world!",
+				"live",
+				"boxwhite_textfirst"
+			)
+			+boxwhite(
+				"Discovery",
+				"See more events on a world map, than anywhere else! Find events in your city or across the globe in seconds to live the experience like a local anywhere you go. For any occasion or location, Lychee’s event map will show you what’s happening, instantly. No more searching or missing out.",
+				"discovery"
+			)
+			+boxwhite(
+				"No Mo’ FOMO",
+				"80% of people allow social media to influence their plans. By following new events you discover, and inviting friends to join in, you won’t miss out ever again.",
+				"fomo",
+				"boxwhite_textfirst"
+			)
+			+boxwhite(
+				"Real Time and Worldwide",
+				"We’ve changed the rules. We care about letting you reach a greater audience! So now you can share your experiences to your city and if it’s popular reach the world! On the other hand, keep among friends only, if you chose.",
+				"worldwide"
+			)
+
+	//- +popup

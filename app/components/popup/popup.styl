@@ -1,0 +1,67 @@
+.popup
+	max-width 400px
+	margin 0 auto
+	margin-bottom 70px
+	padding 40px 40px 30px 40px
+	color #4a4a4a
+	background color-white
+	border-top 5px solid #efc514
+	box-shadow 0 2px 5px 0px #898989
+	transform translate3d(0,0,0)
+	opacity 0
+	
+	@media md
+		position fixed
+		right 40px
+		bottom 40px
+		width 400px
+		margin-bottom 0
+
+	&-close
+		position absolute
+		right 20px
+		top -22px
+		width 40px
+		height 40px
+		padding 5px 0
+		font-size 40px
+		line-height 30px
+		text-align center
+		font-weight 300
+		color color-white
+		border-radius 50%
+		background #efc514
+		transform rotate(45deg)
+		tdn()
+		anim()
+		
+		&:hover
+			transform rotate(225deg)
+			tdn()
+	&-name
+		padding-bottom 25px
+		font-size 18px
+		font-weight 600
+	
+	&-text
+		padding-bottom 30px
+		font-size 13px
+	
+	&-readmore
+		a
+			font-size 13px
+			tdu()
+
+			&:hover
+				tdn()
+
+.popup-fadeUp
+	animation fadeUp 1.5s 0.1s forwards
+	
+@keyframes fadeUp
+	0%
+		transform translate3d(0,2em,0)
+		opacity 0
+	100%
+		transform translate3d(0,0,0)
+		opacity 1

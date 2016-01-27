@@ -1,0 +1,89 @@
+.boxwhite
+	dt()
+	margin-bottom 100px
+	padding 20px
+	background color-white
+	box-shadow 0 2px 5px 0px #898989
+	text-align center
+	
+	@media sm
+		padding 40px
+	
+	@media md
+		dt()
+		padding 50px 80px 60px 0px
+		text-align left
+	
+	&-content
+		display table-footer-group
+		padding-bottom 40px
+	
+		@media md
+			dtc()
+			max-width 580px
+			padding-bottom 0
+		
+		&_feedback
+			display block
+			max-width 525px
+			margin 0 auto
+			padding-bottom 20px
+			text-align center
+
+	&-pic
+		display table-header-group
+		text-align center
+		padding-bottom 30px
+		
+		img
+			width 100%
+			max-width 200px
+		
+		@media md
+			dtc("center")
+			padding-bottom 0
+
+	&-name
+		padding-top 30px
+		margin-bottom 40px
+		font-size 34px
+		font-weight 300
+		
+		@media md
+			padding-top 0
+			white-space nowrap
+	
+	&-intro
+		padding-bottom 40px
+		font-size 19px
+
+	&-text
+		font-weight 400
+		
+	&_textfirst
+		@media md
+			padding-right 0
+			padding-left 80px
+
+.boxwhiteclear
+	margin-bottom 100px
+	padding 20px
+	background color-white
+	box-shadow 0 2px 5px 0px #898989
+	
+	@media sm
+		padding 40px
+
+	@media md
+		padding 50px 80px
+		
+	&-name
+		padding-top 30px
+		margin-bottom 40px
+		font-size 34px
+		font-weight 300
+
+.line-yellow
+	margin 40px 0
+	height 2px
+	background #ffe806

@@ -1,0 +1,15 @@
+//- Include mixins from components
+//-----------------------------------------------
+include ../components/header/header
+include ../components/feedback/feedback
+
+
+//- Extend layout.jade
+//-----------------------------------------------
+extends inc/layout
+
+
+//- Append this to content block in layout.jade
+//-----------------------------------------------
+block append content
+	+headerFeedbackSuccess

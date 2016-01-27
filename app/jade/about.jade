@@ -1,0 +1,67 @@
+//------------------------------------------------
+//- Do not forget to compile PHP file
+//- php/about
+//------------------------------------------------
+
+
+//- Include mixins from components
+//-----------------------------------------------
+include ../components/header/header
+include ../components/feedback/feedback
+
+
+//- Extend layout.jade
+//-----------------------------------------------
+extends inc/layout
+
+
+//- Append this to content block in layout.jade
+//-----------------------------------------------
+block append content
+	+headerAbout
+	
+	.l-content
+		.l-wrap
+			//-
+				.boxwhite
+					.teamBox
+						h2.boxwhite-name Co-Founders:
+						.teamBox-in
+							.teamEl
+								.teamEl-in
+									.teamEl-pic: img(src="img/team-pic.png" alt="")
+									h3.teamEl-name John Mormile – Director
+									.teamEl-desc Schulich School of Business, <br>BBA Graduate 2015
+									.teamEl-text
+										p Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+										p Aenean lacinia bibendum nulla sed consectetur.
+
+							.teamEl
+								.teamEl-in
+									.teamEl-pic: img(src="img/team-pic.png" alt="")
+									h3.teamEl-name Omar Elgammal – Director
+									.teamEl-desc Schulich School of Business, <br>BBA Graduate 2015
+									.teamEl-text
+										p Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+										p Aenean lacinia bibendum nulla sed consectetur.
+
+			.boxwhite.boxwhite_textfirst
+				.boxwhite-content
+					h3.boxwhite-name Programmers / Technical Staff
+					.boxwhite-text
+						p The Masterminds of Lychee have been educated at some of the top institutions in the world and carry professional experience in the fields of computer science, software engineering, artificial intelligence, machine learning and data analytics.
+						p Among notable achievements, our team members have received medals in, and administered Olympiad for Informatics competitions as well as numerous hack-a-thons. Through strategic alliances, management will continue to foster a dynamic work culture among our gifted team and continue to add seasoned developers to the organization.
+				.boxwhite-pic
+					img(src="img/boxwhite-code.png", alt="")
+					.typed-box
+						.typed-box-in
+							span.typed-content.js-writer
+
+
+			.boxwhite.boxwhite_textfirst
+				.boxwhite-content
+					h3.boxwhite-name Thinking of working together?
+					.boxwhite-text
+						.boxwhite-intro If you see a fit between yourself, or your organization and Lychee please feel free to&nbsp;reach out at anytime!
+						+feedbackForm
+				.boxwhite-pic: img(src="img/open.gif", alt="")

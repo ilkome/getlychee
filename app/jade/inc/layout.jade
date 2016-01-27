@@ -1,0 +1,14 @@
+block vars
+
+include ../../components/footer/footer
+
+doctype html
+html(lang="ru")
+	include head
+
+	body.l-body
+		.ilkome
+			block content
+			+footer
+	
+	include scripts
