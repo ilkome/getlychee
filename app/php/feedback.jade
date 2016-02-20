@@ -1,19 +1,20 @@
--if (isset($_POST['submit'])) {
--	$headers = "From: info@getlychee.com\r\n";
--	
--	$email_name = "Feedback from getlychee.com";
--	$name = $_POST["name"];
--	$email_from = $_POST["email"];
--	$message = $_POST["message"];
--
--	$headers .= "Reply-To: " . $email_from . "\r\n";
--
--	$sent = mail('support@griidtechnology.com, ilya.komichev@gmail.com', $email_name, $message, $headers, '-finfo@getlychee.com');
--	if ($sent) {
--		header("Location: http://www.getlychee.com/succsess.html");
--	} else {
--		echo "There has been an error sending your comments. Please try later.";
--	}
--}
+:php
+	if (isset($_POST['submit'])) {
+		$headers = "From: info@getlychee.com\r\n";
+		
+		$email_name = "Feedback from getlychee.com";
+		$name = $_POST["name"];
+		$email_from = $_POST["email"];
+		$message = $_POST["message"];
+
+		$headers .= "Reply-To: " . $email_from . "\r\n";
+
+		$sent = mail('support@griidtechnology.com, ilya.komichev@gmail.com', $email_name, $message, $headers, '-finfo@getlychee.com');
+		if ($sent) {
+			header("Location: http://www.getlychee.com/succsess.html");
+		} else {
+			echo "There has been an error sending your comments. Please try later.";
+		}
+	}
 
 include ../jade/feedback
