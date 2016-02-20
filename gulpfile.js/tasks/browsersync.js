@@ -18,6 +18,7 @@ gulp.task("browsersync", function() {
 		open: false, //local
 		notify: true,
 		logFileChanges: false,
-		notify: false
+		notify: false,
+		online: false
 	});
 });
