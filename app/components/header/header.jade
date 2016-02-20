@@ -3,23 +3,21 @@ mixin headerMenu(className)
 		ul
 			li.is-active: a(href="index.html") Home
 			
-			li: a(href="about.html") Who we are html
-			li: a(href="feedback.html") Feedback html
-			li: a(href="about.html") Who we are
-			li: a(href="feedback.html") Who we are
+			//- li: a(href="about.html") Who we are html
+			//- li: a(href="feedback.html") Feedback html
 
-			//- li: a(href="about.php") Feedback
-			//- li: a(href="feedback.php") Feedback
+			li: a(href="about.php") Who we are
+			li: a(href="feedback.php") Feedback
 
 mixin headerLogo
-	.headerLogo: a(href="index.html")
+	.headerLogo: a(href="index.html") Lychee
 
 mixin headerIndex
 	.header
 		.header-main
 			.header-top
 				.l-wrap
-					+headerLogo
+					h1.headerLogo: a(href="index.html") Lychee
 					+headerMenu
 			.header-info
 				.l-wrap
@@ -71,7 +69,7 @@ mixin headerFeedback
 						.boxwhite-text
 							.boxwhite-intro We love feedback, please drop us a line anytime with a comment, suggestion or question! Someone will reach out to you as soon as possible!
 							+feedbackForm
-					.boxwhite-pic: img(src="img/boxwhite-email.png", alt="")
+					.boxwhite-pic: img(src="img/boxwhite-email.png", alt="Got feedback for us")
 
 mixin headerFeedbackSuccess
 	.header.header_nomargin
