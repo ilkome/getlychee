@@ -1,7 +1,7 @@
-//- Set vars
-//-----------------------------------------------
-block vars
-	- var ishome = true
+//-
+//- ERROR WITH gulp-jade-php
+//- Need to disable gulp-jade-php to not compile jade if else in php 
+//-
 
 
 //- Include mixins from components
@@ -29,10 +29,10 @@ block append content
 							h3.boxwhite-name= name
 							.boxwhite-text= text
 						.boxwhite-pic
-							img(src="img/boxwhite-#{pic}.png", alt="")
+							img(src="img/boxwhite-#{pic}.png", alt="#{name}")
 					else
 						.boxwhite-pic
-							img(src="img/boxwhite-#{pic}.png", alt="")
+							img(src="img/boxwhite-#{pic}.png", alt="#{name}")
 						.boxwhite-content
 							h3.boxwhite-name= name
 							.boxwhite-text= text
