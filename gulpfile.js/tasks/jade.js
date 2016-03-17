@@ -3,8 +3,8 @@
 var gulp    = require("gulp"),
 	changed = require("gulp-changed"),
 	jade    = require("gulp-jade"),
-	notify  = require("gulp-notify"),
-	jadephp = require("gulp-jade-php");
+	notify  = require("gulp-notify");
+// var jadephp = require("gulp-jade-php");
 
 
 // Task
