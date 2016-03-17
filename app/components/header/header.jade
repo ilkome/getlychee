@@ -2,22 +2,24 @@ mixin headerMenu(className)
 	.headerMenu(class=className)
 		ul
 			li.is-active: a(href="index.html") Home
-			
-			//- li: a(href="about.html") Who we are html
-			//- li: a(href="feedback.html") Feedback html
+			li: a(href="about.html") Who we are
+			li: a(href="feedback.html") Feedback
 
-			li: a(href="about.php") Who we are
-			li: a(href="feedback.php") Feedback
+			//- li: a(href="about.php") Who we are
+			//- li: a(href="feedback.php") Feedback
 
-mixin headerLogo
-	.headerLogo: a(href="index.html") Lychee
+mixin headerLogo(home)
+	if home
+		h1.headerLogo: a(href="index.html") Lychee
+	else
+		.headerLogo: a(href="index.html") Lychee
 
 mixin headerIndex
 	.header
 		.header-main
 			.header-top
 				.l-wrap
-					h1.headerLogo: a(href="index.html") Lychee
+					+headerLogo("home")
 					+headerMenu
 			.header-info
 				.l-wrap
