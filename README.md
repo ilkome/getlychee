@@ -6,7 +6,6 @@
 - http://ilko.me/works/getlychee/about.html
 - http://ilko.me/works/getlychee/feedback.html
 - http://ilko.me/works/getlychee/succsess.html
-- http://ilko.me/works/getlychee/terms.html
 
 Website: http://getlychee.com
 
