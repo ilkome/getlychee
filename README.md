@@ -7,9 +7,6 @@
 - http://ilko.me/works/getlychee/feedback.html
 - http://ilko.me/works/getlychee/succsess.html
 
-Website: http://getlychee.com
-
-
 # Documentation
 > This project based on front-end gulp boilerplate by Ilya Komichev.
 
